@@ -1,0 +1,664 @@
+/* Reset CSS */
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerr {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Style untuk teks copyright */
+span.copyright {
+  font-size: 16px;
+  color: #333; /* Warna teks */
+  padding: 10px 0; /* Jarak antara teks dengan tepi atas dan bawah */
+}
+
+.container {
+  margin-top: 150px;
+  white-space: nowrap;
+  height: 400px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: auto;
+  gap: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.container .card {
+  min-width: 500px;
+  height: 300px;
+  background-color: aqua;
+}
+.container::-webkit-scrollbar {
+  width: 0px;
+  display: inline-block;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 217, 0);
+  border-radius: 10px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.papa {
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+#slide-1:target ~ .images {
+  margin-left: 0px;
+}
+#slide-2:target ~ .images {
+  margin-left: -100%;
+}
+#slide-3:target ~ .images {
+  margin-left: 0px;
+}
+
+.carousel {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  animation: slide 5s infinite alternate;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.logo img {
+  width: 100px;
+  margin-top: -18px;
+  margin-left: -120px;
+  height: auto;
+  float: left;
+  color: #000;
+}
+
+.logo {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: -20px;
+  color: #00a6ff;
+}
+
+.chat {
+  margin-left: -20px;
+}
+
+.menu {
+  float: right;
+  margin-top: -65px;
+  margin-left: 550px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 60px;
+  position: absolute;
+  position: -webkit-sticky;
+  top: 0;
+  background: rgba(244, 131, 2, 0);
+  z-index: 3;
+}
+
+video {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1.5;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  border-radius: 20px;
+  background-color: rgba(255, 122, 20, 0.348);
+  transition: all 0.5s ease;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+/* Add this style for the dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to right, #ACD793, #fff);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+/* Adjustments for menu alignment */
+.menu ul {
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu ul li:first-child {
+  margin-left: 0;
+}
+
+.menu .tbl-biru {
+  padding: 0px 30px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #000;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background: #0398c2;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #ACD793;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.carousel {
+  margin-top: 800px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+a.tbl-pink:hover {
+  background: #000;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.tutor-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.kartu-tutor p {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #364f6b;
+}
+
+.partner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-partner {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-partner img {
+  width: 150px;
+  border-radius: 30%;
+}
+
+#contact {
+  background: #dedede;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  width: 100%;
+  line-height: 50px;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav .menu ul {
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+  }
+
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+
+  .sponsor-container {
+    position: relative; /* Membuat posisi relatif untuk kontainer */
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .background-image {
+    width: 100%; /* Mengisi lebar kontainer */
+    display: block; /* Menghilangkan efek whitespace */
+  }
+
+  .sponsor-logos {
+    position: absolute; /* Membuat posisi absolut untuk logo-logo sponsor */
+    top: 50%; /* Meletakkan logo-logo sponsor di tengah vertikal */
+    left: 50%; /* Meletakkan logo-logo sponsor di tengah horizontal */
+    overflow-x: auto;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Memposisikan logo-logo sponsor di tengah kontainer */
+  }
+
+  .sponsor-logo {
+    overflow-x: auto;
+    width: 100px; /* Sesuaikan ukuran logo dengan kebutuhan Anda */
+    height: 120px; /* Mengatur tinggi agar proporsi asli tetap terjaga */
+    margin: 10px; /* Memberikan jarak antar logo */
+  }
+
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #contact {
+    padding: 20px; /* Atur padding untuk memberikan jarak dari tepi */
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around; /* Memberikan jarak antara ikon-ikon secara merata */
+  }
+
+  .footer-section {
+    margin: 0 10px; /* Atur jarak antara ikon-ikon */
+  }
+
+  #footer {
+    background-color: #ACD793;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #footer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .image-container {
+    width: 60%;
+  }
+
+  .relative-container {
+    position: relative;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .text-container {
+    width: 35%;
+    text-align: right;
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+
+  .card-behind-image {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .kartu-tutor,
+  .kartu-partner {
+    width: 50%;
+  }
+}
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 15px;
+  }
+}
+
+#cardContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#card {
+  position: absolute;
+  top: 50%;
+  left: -300px; /* Mulai dari luar layar kiri */
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: left 0.5s ease;
+}
+
+#toggleButton {
+  margin-top: 20px;
+}
+
+#closeButton {
+  margin-top: 10px;
+}
+
+/* overlay katalog ikan */
+.card {
+  position: relative;
+  display: inline-block;
+}
+
+.card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay {
+  position: absolute;
+  bottom: -230px;
+  left: 40px;
+  width: 560px;
+  height: 175px;
+  background-color: #ACD793;
+  color: white;
+  padding: 20px;
+  visibility: hidden;
+  border-radius: 20px;
+  transition: opacity 0.8s, visibility 0.4s, transform 0.3s;
+  transform: translateY(100%);
+}
+
+.overlay h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.overlay p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* scrollbar sejarah kajii */
